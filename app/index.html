@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="expires" content="Mon, 22 jul 2006 11:12:01 GMT">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <base href="/">
+
+    <title>Star Quizz</title>
+    <div id="divStylesheetMainCss">
+         <!-- htmlbuild:css -->
+        <link rel="stylesheet" href="/css/App.css">
+        <!-- endbuild --> 
+    </div>   
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <main ng-view></main>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<loading></loading>
+
+<!-- htmlbuild:js -->
+<script src="/js/App.js"></script>
+
+<!-- endbuild -->
+
+</body>
+</html>

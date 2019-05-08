@@ -1,0 +1,130 @@
+.btn--1 {
+    margin-top: 25px;
+}
+
+.btn--2 {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn--3 {
+    margin-top: 15px;
+}
+
+.btn-order {
+    padding: 2px 0;
+}
+
+.btn-link {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.btn-outline-danger, .btn-outline-red {
+    color: #dc3545;
+    background-color: white;
+    background-image: none;
+    border-color: #dc3545;
+}
+
+.btn-outline-warning {
+    color: #ffc107;
+    background-color: white;
+    background-image: none;
+    border-color: #ffc107;
+}
+
+.btn-outline-success, .btn-outline-green {
+    color: #28a745;
+    background-color: white;
+    background-image: none;
+    border-color: #28a745;
+}
+.btn-outline-primary, .btn-outline-blue {
+    color: #337ab7;
+    background-color: white;
+    background-image: none;
+    border-color: #337ab7;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color:  #28a745;
+    background-image: none;
+    border-color: #28a745;
+}
+
+.btn-outline-warning:hover {
+    color: white;
+    background-color:  #ffc107;
+    background-image: none;
+    border-color: #ffc107;
+}
+.btn-outline-danger:hover {
+    color: white;
+    background-color:  #dc3545;
+    background-image: none;
+    border-color: #dc3545;
+}
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #337ab7;
+    background-image: none;
+    border-color: #337ab7;
+}
+.btn-outline-success-clicked, .btn-outline-green-clicked { 
+    color: white;
+    background-color:  #28a745;
+    background-image: none;
+    border-color: #28a745;
+    box-sizing: border-box;
+}
+.btn-outline-warning-clicked {
+    color: white;
+    background-color:  #ffc107;
+    background-image: none;
+    border-color: #ffc107;
+    box-sizing: border-box;
+}
+.btn-outline-danger-clicked, .btn-outline-red-clicked {
+    color: white;
+    background-color:  #dc3545;
+    background-image: none;
+    border-color: #dc3545;
+    box-sizing: border-box;
+}
+.btn-outline-primary-clicked, .btn-outline-blue-clicked {
+    color: white;
+    background-color: #337ab7;
+    background-image: none;
+    border-color: #337ab7;
+}
+.btn-outline-danger-clicked:focus, .btn-outline-red-clicked:focus {
+    color: white;
+}
+.btn-outline-warning-clicked:focus {
+    color: white;
+}
+.btn-outline-success-clicked:focus, .btn-outline-green-clicked:focus {
+    color: white;
+}
+.btn-outline-primary-clicked:focus, .btn-outline-blue-clicked:focus {
+    color: white;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-outline-green:hover{
+    color: #28a745
+}
+.btn-outline-green-clicked:hover{
+    color: white
+}
+
+.btn-outline-red:hover{
+    color: #dc3545
+}
+.btn-outline-red-clicked:hover{
+    color: white
+}

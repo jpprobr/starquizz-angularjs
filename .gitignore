@@ -1,0 +1,7 @@
+/node_modules
+/preview
+/dist
+/app/css/main.css
+.idea
+PackageTmp/
+dist\.zip

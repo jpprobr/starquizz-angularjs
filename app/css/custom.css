@@ -1,0 +1,46 @@
+
+.character {
+    font-size: 30px;
+}
+
+.logo-thumbnail {
+    width:60px;
+    height:60px;
+}
+
+.logo-splash {
+    width:200px;
+    height: 200px;
+}
+
+.photo{
+    width:120px;
+    height:150px;
+}
+
+.photo-details{
+    width:150px;
+    height:187px;
+}
+
+.checked-people{
+    font-size:20px;
+    color:#62E593;
+    margin-top:-10px;
+}
+
+.info-score {
+    font-size:20px;
+}
+
+.info-timer{
+    font-size:30px;
+}
+.info-timer-text{
+    color:darkred;
+    margin-left: 7px;
+}
+
+.info-timer-expired{
+    color:red
+}

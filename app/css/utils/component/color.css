@@ -1,0 +1,39 @@
+.blue {
+    background-color: #0683f2;
+}
+
+.dark-blue {
+    background-color: #0A3F7E;
+}
+
+.green {
+    background-color: #20de20;
+}
+
+.yellow {
+    background-color: #efe400;
+}
+
+.orange {
+    background-color: #fc7700;
+}
+
+.red {
+    background-color: #fc0011;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.btn-color-toggle {
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.font-color-gray {
+    color: gray;
+}
+.font-color-red {
+    color: red;
+}

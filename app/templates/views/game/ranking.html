@@ -1,0 +1,42 @@
+<div ng-controller="RankingCtrl as vm">
+    
+    <div class="page-header">
+        <div class="media">
+            <div class="media-left media-middle">
+                <img src="images/vader.png" alt="Star Quizz" class="logo-thumbnail">
+            </div>
+            <div class="media-body media-middle">   
+                <span><strong>STAR QUIZZ - RANKING</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <section id="rankingList">
+            <table class="table table-condensed table-hover table-margin table--word-break">
+                <thead>
+                    <tr>
+                        <th>Jogador</th>
+                        <th>E-mail Jogador</th>
+                        <th class="text-center">Total Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in vm.list">
+                        <td>{{item.user.nome}}</td>
+                        <td>{{item.user.email}}</td>
+                        <td class="text-center">{{item.game.totalScore}}</td>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <div class="row">
+        <hr>
+        <p>
+            <a href="#/" class="btn btn-default">
+                <span class="glyphicon glyphicon-chevron-left"></span> Jogar novamente
+            </a> 
+        </p>
+    </div>
+</div>

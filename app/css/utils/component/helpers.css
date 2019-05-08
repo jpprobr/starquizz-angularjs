@@ -1,0 +1,54 @@
+.table-margin {
+    margin-top: 20px;
+}
+
+.alert-margin {
+    margin-top: 32px;
+}
+
+.btnToggleHeightWidth {
+    height: auto !important;
+    width: auto !important;
+}
+
+.active-link {
+    background: #E4E4E4;
+}
+
+.active-link a,
+.active-link a:hover {
+    color: #999 !important;
+    cursor: default;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.display-block {
+  display: block;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.max-height-70 {
+    max-height: 70px;
+}
+
+.header-logo {
+    margin-top: -70px;
+    background: #fcfcfc;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.modal {
+    word-wrap: break-word;
+    white-space: normal;
+    word-break: break-all;
+}
+

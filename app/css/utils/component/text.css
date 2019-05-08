@@ -1,0 +1,35 @@
+.text--1 {
+    font-size: 1.4em;
+}
+
+.text--decoration-off {
+    text-decoration: none !important;
+}
+
+.text--color-333333 {
+    color: #333333 !important;
+}
+
+.text--color-FFFFFF {
+    color: #FFFFFF !important;
+}
+
+.text--font-size {
+    font-size: 12px;
+}
+
+.text-footer {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.alert-margin {
+    margin-top: 32px;
+}
+.hover-cursor-point {
+    cursor: pointer;
+}
+.vertical-center {
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <h4>{{ modal.title }}</h4>
+</div>
+<div class="modal-body">
+
+    <div class="media">
+        <div class="media-left media-middle">
+            <img class="media-object photo-details" ng-src="{{modal.image}}" alt="...">
+        </div>
+        <div class="media-body">
+            <div>
+                <p><strong>Species:</strong> <span>{{modal.species}}</span></p>
+                <p><strong>Height:</strong> <span>{{modal.height}}</span></p>
+                <p><strong>Hair:</strong> <span>{{modal.hair}}</span></p>
+                <p><strong>Planet:</strong> <span>{{modal.planet}}</span></p>
+                <p><strong>Movies:</strong> <span>{{modal.films}}</span></p>
+                <p><strong>Vehicles:</strong> <span>{{modal.vehicles}}</span></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="close()">OK</button>
+</div>

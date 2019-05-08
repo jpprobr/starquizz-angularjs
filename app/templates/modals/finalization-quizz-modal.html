@@ -1,0 +1,50 @@
+<div class="modal-header">
+    <h2>{{modal.title}}</h2>
+    <br>
+    <h4 class="text-center info-score">{{modal.userGame.totalScore}} pontos</h4>
+</div>
+<div class="modal-body">
+    
+    <section>
+        <form role="form" name="form" novalidate>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="form-group" ng-class="{'has-error': validation.hasError(form.nome) }">
+                        <label for="nome">Nome: *</label>
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Informe seu nome" 
+                            ng-model="model.nome" ng-required="true" ng-maxlength="100" />
+                        <field-message ng-show="validation.required(form.nome)" message="{{ messages.requiredField }}"></field-message>
+                        <field-message ng-show="validation.maxLength(form.nome)" message="{{ messages.maxLength(100) }}"></field-message>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <div class="form-group" ng-class="{'has-error': validation.hasError(form.email)}">
+                        <label for="email">E-mail: *</label> 
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Informe seu e-mail. (Ex.: email@dominio.com)" 
+                            ng-model="model.email" ng-required="true" ng-maxlength="50" 
+                            ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" />
+                        <field-message ng-show="validation.required(form.email)" message="{{ messages.requiredField }}"></field-message>
+                        <field-message ng-show="validation.maxLength(form.email)" message="{{ messages.maxLength(50) }}"></field-message>
+                        <field-message ng-show="validation.pattern(form.email)"  message="{{ messages.emailField }}"></field-message>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+</div>
+<div class="modal-footer">
+    
+    <div class="text-left">
+        <!-- <button type="button" class="btn btn-primary" ng-click="close('confirm')"> -->
+        <button type="button" class="btn btn-primary" ng-click="save(model)" ng-disabled="form.$invalid">
+            <span class="glyphicon glyphicon-floppy-saved"></span>
+            <span>Salvar</span>        
+        </button>
+
+        <button type="button" class="btn btn-default" ng-click="dismiss('cancel')">
+            <span>Cancelar</span>
+        </button>    
+    </div>
+</div>
+

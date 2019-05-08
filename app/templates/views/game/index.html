@@ -1,0 +1,81 @@
+<div ng-controller="GameCtrl as vm">
+    
+    <div class="text-right">
+        <section id="timer" class="info-timer">
+            <span class="glyphicon glyphicon-time"></span> 
+            <span class="info-timer-text"><strong>{{vm.timer | secondsToDateTime | date:'mm:ss'}}</strong></span>
+            <div ng-if="vm.hasTimeExpired()" class="info-timer-expired">Seu tempo expirou! :( </div>
+        </section>     
+        <section id="score" class="info-score">
+            <strong>Score: </strong> <span>{{vm.userGame.totalScore}}</span>
+        </section>               
+    </div>
+
+    <div class="page-header">
+        <div class="media">
+            <div class="media-left media-middle">
+                <img src="images/vader.png" alt="Star Quizz" class="logo-thumbnail">
+            </div>
+            <div class="media-body media-middle">   
+                <span><strong>STAR QUIZZ</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+       
+        <section id="characters">
+            <div ng-repeat="item in vm.itens">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <div class="text-center">
+                            <img ng-src="{{item.image}}" alt="Who is this?" class="photo">
+                        </div>                    
+                        <div class="caption">
+                            <hr>
+                            <p class="text-center">
+                                <button ng-show="item.isChecked" ng-disabled="item.isChecked" type="button" class="btn btn-success btn-lg" >
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </button>
+                                <button ng-hide="item.isChecked" type="button" class="btn btn-primary btn-lg" role="button" 
+                                    ng-click=vm.guessCharacter(item) title="Quem é este personagem?">?</button>
+                                <button type="button" class="btn btn-default btn-lg" role="button" 
+                                    ng-click="vm.showDetails(item)" title="Ver detalhes do personagem">...</button>
+                            </p>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <hr>
+            <div class="text-center">
+                <ul uib-pagination
+                    ng-change="vm.paginate()"
+                    ng-model="vm.page.number"
+                    max-size="5"
+                    total-items="vm.page.totalElements"
+                    items-per-page="vm.page.size"
+                    num-pages="vm.page.totalPages"
+                    force-ellipses="true"
+                    previous-text="&lsaquo;"
+                    next-text="&rsaquo;"
+                    first-text="&laquo;"
+                    last-text="&raquo;"
+                    boundary-link-numbers="true"
+                    class="pagination-sm">
+                </ul>
+            </div>            
+        </section>
+
+    </div>      
+    
+    <div class="row">
+        <hr>
+        <div class="text-center">
+            <button type="button" class="btn btn-success btn-lg" role="button" ng-click=vm.finalizeQuizz()>
+                <span class="glyphicon glyphicon-ok-circle"></span> <span>Finalizar</span>
+            </button>
+        </div>
+    </div>
+</div>  

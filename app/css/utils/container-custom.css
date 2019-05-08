@@ -1,0 +1,26 @@
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 50px;
+}
+
+@media (min-width: 768px){
+    .full-width-flex {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding: 50px;
+    }
+
+    .table-full {
+        width:95%;
+        margin:auto;
+    }
+}

@@ -1,0 +1,13 @@
+@media only screen and (min-width: 480px) {
+    .vertical-align-middle > * {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .vertical-align-middle::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
