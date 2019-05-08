@@ -271,7 +271,7 @@
                     }
 
                     if (!vm.userGame || !vm.userGame.peopleSelected || vm.userGame.peopleSelected.length <= 0){
-                        swal('"Eu acho a sua falta de fé perturbadora!" (Darth Vader) <br> Selecione ao menos um personagem!');
+                        swal('"Sua falta de fé é perturbadora!" (Darth Vader). Selecione ao menos um personagem!');
                         return;
                     }
 
@@ -289,14 +289,14 @@
                             modal.result.then(function (data) {
                                 swal("Quizz finalizado!", "Seu nome agora está registrado na galáxia distante!", "success")
                                 .then(function(){
-                                    $location.path('#/ranking');
+                                    $location.path('/ranking');
                                 });
                             });
                         }
                         else{
                             console.log('Ao jogo eu devo voltar (Yd)...');
                         }
-                    });                    
+                    });      
                 }
             }   
         ]);

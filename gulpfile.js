@@ -11,7 +11,7 @@
     console.log('\nIniciando serviço local...');
 
     var applicationPath = 'app';
-    var contextDist = '/star-quizz/';
+    var contextDist = '/starquizz/';
     var contextLocal = '/';
 
     var distPath = 'PackageTmp';
